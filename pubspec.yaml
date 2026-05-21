@@ -1,0 +1,28 @@
+name: quickfit
+description: A role-based fitness app for students and coaches.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.6.0
+  firebase_auth: ^5.3.1
+  cloud_firestore: ^5.4.4
+  provider: ^6.1.1
+  intl: ^0.19.0
+  uuid: ^4.2.2
+  google_fonts: ^6.1.0
+  percent_indicator: ^4.2.3
+  fl_chart: ^0.66.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true

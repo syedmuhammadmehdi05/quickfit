@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickFit - Role-Based Fitness App for Students & Coaches</title>
+    <meta name="description" content="Track workouts, assign routines, join challenges, and view live leaderboards. QuickFit is the ultimate fitness tool for students and coaches.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <i data-lucide="bolt"></i>
+                </div>
+                <span class="logo-text">Quick<span>Fit</span></span>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#roles">Roles</a>
+                <a href="#download">Download</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <a href="#download" class="btn btn-primary nav-cta">Get APK</a>
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation menu">
+                    <i data-lucide="menu"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile Drawer Menu -->
+    <div class="mobile-menu-overlay"></div>
+    <div class="mobile-menu">
+        <nav class="mobile-nav-links">
+            <a href="#features">Features</a>
+            <a href="#roles">Roles</a>
+            <a href="#download">Download</a>
+            <a href="#contact">Contact</a>
+            <a href="#download" class="btn btn-primary mobile-cta">Get APK</a>
+        </nav>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-glow"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">
+                    <span class="badge-dot"></span> Powered by Flutter & Firebase
+                </div>
+                <h1 class="hero-title">Your Fitness Journey, <span>Synchronized</span></h1>
+                <p class="hero-subtitle">The first role-based fitness app connecting Students and Coaches in real-time. Log workouts, run custom challenges, and see visual progress metrics instantenously.</p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary">
+                        <i data-lucide="download"></i> Download APK
+                    </a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="mock-device-container">
+                    <div class="mock-device">
+                        <div class="mock-screen">
+                            <div class="app-mock-header">
+                                <div class="user-info">
+                                    <div class="mock-avatar">S</div>
+                                    <div>
+                                        <div class="mock-username">Welcome Back, Student!</div>
+                                        <div class="mock-subtitle">Ready to conquer your day?</div>
+                                    </div>
+                                </div>
+                                <div class="mock-header-icon"><i data-lucide="bell"></i></div>
+                            </div>
+                            
+                            <div class="app-mock-stats">
+                                <div class="stat-card">
+                                    <span class="stat-label">Workouts</span>
+                                    <span class="stat-val">12 <span class="trend"><i data-lucide="trending-up"></i></span></span>
+                                </div>
+                                <div class="stat-card">
+                                    <span class="stat-label">Challenges</span>
+                                    <span class="stat-val">3 <span class="accent-dot"></span></span>
+                                </div>
+                            </div>
+
+                            <div class="app-mock-chart">
+                                <div class="chart-header">
+                                    <span>Weekly Activity</span>
+                                    <span class="chart-legend">Last 4 weeks</span>
+                                </div>
+                                <div class="chart-bars">
+                                    <div class="bar-col"><div class="bar" style="height: 40%"></div><span>W1</span></div>
+                                    <div class="bar-col"><div class="bar" style="height: 65%"></div><span>W2</span></div>
+                                    <div class="bar-col"><div class="bar active" style="height: 85%"></div><span>W3</span></div>
+                                    <div class="bar-col"><div class="bar" style="height: 55%"></div><span>W4</span></div>
+                                </div>
+                            </div>
+
+                            <div class="app-mock-task">
+                                <div class="task-checkbox checked"><i data-lucide="check"></i></div>
+                                <div class="task-info">
+                                    <div class="task-title">Morning Cardio Blast</div>
+                                    <div class="task-time">Assigned by Coach Dev</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Engineered for Better Results</h2>
+                <p>Equipped with state-of-the-art tools designed specifically for cooperative fitness instruction.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon primary"><i data-lucide="users"></i></div>
+                    <h3>Dual-Role Architecture</h3>
+                    <p>Log in as either a Coach or a Student. Customize your dashboard experience and access specific tools tailored to your fitness objective.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon accent"><i data-lucide="activity"></i></div>
+                    <h3>Activity Dashboard</h3>
+                    <p>Coaches can push workouts directly to their trainees, while students view, perform, and check off assigned tasks on completion.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon coral"><i data-lucide="trophy"></i></div>
+                    <h3>Live Challenges</h3>
+                    <p>Compete together! Engage in leaderboard challenges with real-time score updates powered securely by Firebase Cloud Firestore.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon purple"><i data-lucide="bar-chart-3"></i></div>
+                    <h3>Visual Progress Reports</h3>
+                    <p>Track performance over a rolling 4-week window using clean bar charts. Pinpoint precisely when and where targets are met.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roles Highlight Section -->
+    <section id="roles" class="roles-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tailored Workflows</h2>
+                <p>QuickFit molds itself to fit the exact role you play in the gym environment.</p>
+            </div>
+
+            <div class="roles-container">
+                <!-- Student Card -->
+                <div class="role-highlight-card student">
+                    <div class="role-badge">STUDENT</div>
+                    <h3>Own Your Training</h3>
+                    <ul class="role-list">
+                        <li><i data-lucide="check-circle-2"></i> View customized routines immediately</li>
+                        <li><i data-lucide="check-circle-2"></i> Log completions & submit notes to your Coach</li>
+                        <li><i data-lucide="check-circle-2"></i> Track workout volume and frequency charts</li>
+                        <li><i data-lucide="check-circle-2"></i> Join live challenges and claim leaderboard rank</li>
+                    </ul>
+                </div>
+
+                <!-- Coach Card -->
+                <div class="role-highlight-card coach">
+                    <div class="role-badge">COACH</div>
+                    <h3>Lead Your Team</h3>
+                    <ul class="role-list">
+                        <li><i data-lucide="check-circle-2"></i> Manage multiple students in one dashboard</li>
+                        <li><i data-lucide="check-circle-2"></i> Create and assign workouts seamlessly</li>
+                        <li><i data-lucide="check-circle-2"></i> Create local challenges to motivate students</li>
+                        <li><i data-lucide="check-circle-2"></i> Live-edit score leaderboards directly</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download-section">
+        <div class="container download-container">
+            <div class="download-card">
+                <div class="download-content">
+                    <h2>Get Started with QuickFit Today</h2>
+                    <p>Download the latest release version of the application package (APK) directly and begin logging your training session within minutes.</p>
+                    <div class="apk-download-box">
+                        <a href="../build/app/outputs/flutter-apk/app-release.apk" download class="btn btn-primary btn-large">
+                            <i data-lucide="download"></i> Download Android APK (v1.0.0)
+                        </a>
+                        <p class="download-meta">Requires Android 8.0 or above. Scan the file with your device's security scanner if prompted.</p>
+                    </div>
+                </div>
+                <div class="download-visual">
+                    <i data-lucide="smartphone" class="device-icon"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Get in Touch</h2>
+                    <p>Have questions about setting up QuickFit, integration inquiries, or feedback? Drop us a message, and our developers will get back to you.</p>
+                    
+                    <div class="info-items">
+                        <div class="info-item">
+                            <i data-lucide="mail"></i>
+                            <div>
+                                <h4>Email</h4>
+                                <p>support@quickfitapp.com</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <h4>Headquarters</h4>
+                                <p>QuickFit Dev Lab, Pakistan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="john@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Describe your query here..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+                    </form>
+                    <div id="form-success" class="form-success-msg">
+                        <i data-lucide="check-circle-2"></i>
+                        <span>Thank you! Your message has been sent successfully.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon">
+                        <i data-lucide="bolt"></i>
+                    </div>
+                    <span class="logo-text">Quick<span>Fit</span></span>
+                </div>
+                <p>Connecting students and coaches for optimal physical training results.</p>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Application</h4>
+                <a href="#features">Features</a>
+                <a href="#roles">Roles</a>
+                <a href="#download">Download APK</a>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 QuickFit App. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
