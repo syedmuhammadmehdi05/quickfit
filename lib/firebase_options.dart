@@ -20,19 +20,19 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCIpVyiX2MSDkg8ocN1j60XKqMnXLJ8vl4',
-    appId: '1:644942822762:android:639bd83e6e8a5a80eab913',
-    messagingSenderId: '644942822762',
-    projectId: 'quickfit-app-6ab63',
-    storageBucket: 'quickfit-app-6ab63.firebasestorage.app',
+    apiKey: 'AIzaSyC-O4juCMMa-Ugmq8WfT6W0Icsq0McXNxs',
+    appId: '1:447857003968:android:d74fbaaf5cf346e0c38c25',
+    messagingSenderId: '447857003968',
+    projectId: 'quickfit-8970c',
+    storageBucket: 'quickfit-8970c.firebasestorage.app',
   );
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCExHVtLv0hs8DGYASCmkjtDTBJKTP99SE',
-    appId: '1:644942822762:web:3202732653f611e9eab913',
-    messagingSenderId: '644942822762',
-    projectId: 'quickfit-app-6ab63',
-    authDomain: 'quickfit-app-6ab63.firebaseapp.com',
-    storageBucket: 'quickfit-app-6ab63.firebasestorage.app',
+    apiKey: 'AIzaSyC-O4juCMMa-Ugmq8WfT6W0Icsq0McXNxs',
+    appId: '1:447857003968:web:d74fbaaf5cf346e0c38c25',
+    messagingSenderId: '447857003968',
+    projectId: 'quickfit-8970c',
+    authDomain: 'quickfit-8970c.firebaseapp.com',
+    storageBucket: 'quickfit-8970c.firebasestorage.app',
   );
 }

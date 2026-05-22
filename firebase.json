@@ -1,1 +1,14 @@
-{"flutter":{"platforms":{"dart":{"lib/firebase_options.dart":{"projectId":"quickfit-app-6ab63","configurations":{"web":"1:644942822762:web:3202732653f611e9eab913"}}}}}}
+{
+    "flutter": {
+        "platforms": {
+            "dart": {
+                "lib/firebase_options.dart": {
+                    "projectId": "quickfit-8970c",
+                    "configurations": {
+                        "web": "1:447857003968:web:d74fbaaf5cf346e0c38c25"
+                    }
+                }
+            }
+        }
+    }
+}
